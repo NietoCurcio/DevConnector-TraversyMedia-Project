@@ -1,4 +1,6 @@
 {
   "mongoURI": "mongodb+srv://felipe123:felipe123@devconnector-a0k2u.mongodb.net/MERN-database?retryWrites=true&w=majority",
-  "jwtSecret": "mysupersecrettoken"
+  "jwtSecret": "mysupersecrettoken",
+  "githubClientId": "e10bc0dde90ceae89bc1",
+  "githubSecret": "ceb6cf1f07eff6607d0e47d59ec09710e5a5bea8"
 }
