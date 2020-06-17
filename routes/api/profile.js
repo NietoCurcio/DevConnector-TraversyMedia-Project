@@ -16,6 +16,7 @@ const { remove } = require('../../models/Profile');
 // endpoint = route but endpoint is like take a data (in our backend routes) and send to our client
 router.get('/me', auth, async (req, res) => {
   // when use moongose, that returns a promise, so async..await together with try catch
+
   try {
     const profile = await await Profile.findOne({
       user: req.user.id,
