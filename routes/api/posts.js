@@ -18,7 +18,9 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-
+    // console.log('FELIPAO');
+    // console.log(req.body);
+    return res.send('teste');
     try {
       const user = await User.findById(req.user.id).select('-password');
 
@@ -135,7 +137,7 @@ router.put('/unlike/:id', auth, async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
 
-    // Check if the post has already been liked
+    // Check if the post has already been unliked
     if (
       post.likes.filter((like) => like.user.toString() === req.user.id)
         .length === 0
@@ -145,12 +147,11 @@ router.put('/unlike/:id', auth, async (req, res) => {
 
     // Get remove index
     const removeIndex = post.likes
-      .map((like) => {
-        like.user.toString();
-        console.log(typeof like.user);
-        console.log(typeof like.user.toString());
-      })
+      .map((like) => like.user.toString())
       .indexOf(req.user.id);
+
+    // console.log(typeof like.user);
+    // console.log(typeof like.user.toString());
 
     post.likes.splice(removeIndex, 1);
 
@@ -174,6 +175,7 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
+    // console.log('FELIPAOOOOOOOO');
 
     try {
       const user = await User.findById(req.user.id).select('-password');
