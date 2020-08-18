@@ -18,9 +18,9 @@ router.post(
     if (!errors.isEmpty()) {
       return res.status(400).json({ errors: errors.array() });
     }
-    // console.log('FELIPAO');
+    // console.log('FELIPE Debugging');
     // console.log(req.body);
-    return res.send('teste');
+    // return res.send('test');
     try {
       const user = await User.findById(req.user.id).select('-password');
 
