@@ -33,10 +33,11 @@ You can create your profile with description about yourself, adress, company exp
 
 <img src="https://github.com/NietoCurcio/DevConnector-TraversyMedia-Project/blob/master/readme/image3.png?raw=true" width="800" alt="DevConnectorPosts">
 
-### About that stack
+## About that stack
 
 The database was built with MongoDB atlas cloud database
 
 That technologies together make a powerful stack, with a solid base of Javascript. In the database we have a no-sql document database with documents (documents, being objects and nested objects) in the collectionss. From the server comes JSON response handle by middleware authentications, models and endpoints. The client side is updated based in the state, managed by Redux in a tree or object format; both, React and Express framework, have Node to handle the libraries, dependencies and run scripts.
 
-- I studied the built of this project in Brad Traversy's MERN stack course.
+
+I studied the built of this project in Brad Traversy's MERN stack course.
