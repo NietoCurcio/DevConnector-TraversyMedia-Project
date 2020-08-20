@@ -9,7 +9,7 @@ const PostForm = ({ addPost }) => {
   return (
     <div class='post-form'>
       <div class='bg-primary p'>
-        <h3>Leave A Comment</h3>
+        <h3>Leave a post</h3>
       </div>
       <form
         class='form my-1'
@@ -24,7 +24,7 @@ const PostForm = ({ addPost }) => {
           name='text'
           cols='30'
           rows='5'
-          placeholder='Comment on this post'
+          placeholder='What are you thinking?'
           value={text}
           onChange={(e) => setText(e.target.value)}
           required
