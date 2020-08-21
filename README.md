@@ -29,7 +29,7 @@ In that image we can see that there are four reducers combined in our rootReduce
 
 **Dashboard**
 
-You can create your profile with description about yourself, adress, company experience credentials, education credentials and technologies which you have some knowledge, you can also see a list of developers registered in the network to interact and know more about them.
+You can create your profile with description about yourself, adress, company, experience credentials, education credentials and technologies which you have some knowledge, you can also see a list of developers registered in the network to interact and know more about them.
 
 <img src="https://github.com/NietoCurcio/DevConnector-TraversyMedia-Project/blob/master/readme/image3.png?raw=true" width="800" alt="DevConnectorPosts">
 
